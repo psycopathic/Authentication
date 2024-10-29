@@ -69,9 +69,10 @@ const Register = () => {
             });
         } else {
             // console.log("user registration succesfully done");
+            // console.log(inpval);
 
 
-            const data = await fetch("/register", {
+            const data = await fetch("http://localhost:3001/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
